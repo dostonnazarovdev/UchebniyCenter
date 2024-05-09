@@ -40,10 +40,8 @@
             this.label5 = new System.Windows.Forms.Label();
             this.textBox4 = new System.Windows.Forms.TextBox();
             this.checkBox1 = new System.Windows.Forms.CheckBox();
-            this.label4 = new System.Windows.Forms.Label();
-            this.comboBox1 = new System.Windows.Forms.ComboBox();
-            this.comboBox2 = new System.Windows.Forms.ComboBox();
-            this.label6 = new System.Windows.Forms.Label();
+            this.textBox5 = new System.Windows.Forms.TextBox();
+            this.label7 = new System.Windows.Forms.Label();
             this.panel1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -52,16 +50,16 @@
             this.panel1.Controls.Add(this.btnSave);
             this.panel1.Controls.Add(this.btnClose);
             this.panel1.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.panel1.Location = new System.Drawing.Point(0, 486);
+            this.panel1.Location = new System.Drawing.Point(0, 410);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(578, 72);
+            this.panel1.Size = new System.Drawing.Size(584, 72);
             this.panel1.TabIndex = 0;
             // 
             // btnSave
             // 
             this.btnSave.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
             this.btnSave.BackColor = System.Drawing.Color.GreenYellow;
-            this.btnSave.Location = new System.Drawing.Point(360, 20);
+            this.btnSave.Location = new System.Drawing.Point(366, 20);
             this.btnSave.Name = "btnSave";
             this.btnSave.Size = new System.Drawing.Size(100, 40);
             this.btnSave.TabIndex = 7;
@@ -74,7 +72,7 @@
             this.btnClose.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
             this.btnClose.BackColor = System.Drawing.Color.Pink;
             this.btnClose.DialogResult = System.Windows.Forms.DialogResult.Cancel;
-            this.btnClose.Location = new System.Drawing.Point(466, 20);
+            this.btnClose.Location = new System.Drawing.Point(472, 20);
             this.btnClose.Name = "btnClose";
             this.btnClose.Size = new System.Drawing.Size(100, 40);
             this.btnClose.TabIndex = 6;
@@ -139,7 +137,7 @@
             // 
             this.label5.AutoSize = true;
             this.label5.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label5.Location = new System.Drawing.Point(12, 258);
+            this.label5.Location = new System.Drawing.Point(12, 169);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(88, 20);
             this.label5.TabIndex = 9;
@@ -148,10 +146,10 @@
             // textBox4
             // 
             this.textBox4.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox4.Location = new System.Drawing.Point(176, 258);
+            this.textBox4.Location = new System.Drawing.Point(176, 169);
             this.textBox4.Multiline = true;
             this.textBox4.Name = "textBox4";
-            this.textBox4.Size = new System.Drawing.Size(388, 163);
+            this.textBox4.Size = new System.Drawing.Size(388, 144);
             this.textBox4.TabIndex = 10;
             // 
             // checkBox1
@@ -159,59 +157,39 @@
             this.checkBox1.AutoSize = true;
             this.checkBox1.Checked = true;
             this.checkBox1.CheckState = System.Windows.Forms.CheckState.Checked;
-            this.checkBox1.Location = new System.Drawing.Point(176, 449);
+            this.checkBox1.Location = new System.Drawing.Point(176, 373);
             this.checkBox1.Name = "checkBox1";
             this.checkBox1.Size = new System.Drawing.Size(93, 20);
             this.checkBox1.TabIndex = 11;
             this.checkBox1.Text = "Активный";
             this.checkBox1.UseVisualStyleBackColor = true;
             // 
-            // label4
+            // textBox5
             // 
-            this.label4.AutoSize = true;
-            this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label4.Location = new System.Drawing.Point(12, 170);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(89, 20);
-            this.label4.TabIndex = 12;
-            this.label4.Text = "Группа 1";
+            this.textBox5.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.textBox5.Location = new System.Drawing.Point(176, 327);
+            this.textBox5.Name = "textBox5";
+            this.textBox5.Size = new System.Drawing.Size(388, 26);
+            this.textBox5.TabIndex = 18;
             // 
-            // comboBox1
+            // label7
             // 
-            this.comboBox1.FormattingEnabled = true;
-            this.comboBox1.Location = new System.Drawing.Point(176, 170);
-            this.comboBox1.Name = "comboBox1";
-            this.comboBox1.Size = new System.Drawing.Size(388, 24);
-            this.comboBox1.TabIndex = 13;
-            // 
-            // comboBox2
-            // 
-            this.comboBox2.FormattingEnabled = true;
-            this.comboBox2.Location = new System.Drawing.Point(178, 213);
-            this.comboBox2.Name = "comboBox2";
-            this.comboBox2.Size = new System.Drawing.Size(388, 24);
-            this.comboBox2.TabIndex = 15;
-            // 
-            // label6
-            // 
-            this.label6.AutoSize = true;
-            this.label6.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label6.Location = new System.Drawing.Point(12, 213);
-            this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(89, 20);
-            this.label6.TabIndex = 14;
-            this.label6.Text = "Группа 2";
+            this.label7.AutoSize = true;
+            this.label7.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label7.Location = new System.Drawing.Point(12, 330);
+            this.label7.Name = "label7";
+            this.label7.Size = new System.Drawing.Size(67, 20);
+            this.label7.TabIndex = 17;
+            this.label7.Text = "Адрес";
             // 
             // AddEditUchnikiForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.CancelButton = this.btnClose;
-            this.ClientSize = new System.Drawing.Size(578, 558);
-            this.Controls.Add(this.comboBox2);
-            this.Controls.Add(this.label6);
-            this.Controls.Add(this.comboBox1);
-            this.Controls.Add(this.label4);
+            this.ClientSize = new System.Drawing.Size(584, 482);
+            this.Controls.Add(this.textBox5);
+            this.Controls.Add(this.label7);
             this.Controls.Add(this.checkBox1);
             this.Controls.Add(this.textBox4);
             this.Controls.Add(this.label5);
@@ -249,9 +227,7 @@
         private System.Windows.Forms.TextBox textBox4;
         private System.Windows.Forms.Button btnSave;
         private System.Windows.Forms.CheckBox checkBox1;
-        private System.Windows.Forms.Label label4;
-        private System.Windows.Forms.ComboBox comboBox1;
-        private System.Windows.Forms.ComboBox comboBox2;
-        private System.Windows.Forms.Label label6;
+        private System.Windows.Forms.TextBox textBox5;
+        private System.Windows.Forms.Label label7;
     }
 }

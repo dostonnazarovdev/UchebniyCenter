@@ -1,6 +1,6 @@
 ﻿namespace UchebniyCenter
 {
-    partial class DocUxodUchenika
+    partial class DocPrinyatUchenika
     {
         /// <summary>
         /// Required designer variable.
@@ -148,15 +148,15 @@
             this.label2.TabIndex = 20;
             this.label2.Text = "Группа";
             // 
-            // DocUxodUchenika
+            // DocPrinyatUchenika
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(542, 262);
             this.Controls.Add(this.panel2);
             this.Controls.Add(this.panel1);
-            this.Name = "DocUxodUchenika";
-            this.Text = "Документ Уход Ученика";
+            this.Name = "DocPrinyatUchenika";
+            this.Text = "Документ Принять Ученика";
             this.panel1.ResumeLayout(false);
             this.panel2.ResumeLayout(false);
             this.panel2.PerformLayout();

@@ -33,6 +33,14 @@
             this.tsmiUcheniki = new System.Windows.Forms.ToolStripMenuItem();
             this.tsmiUchitelya = new System.Windows.Forms.ToolStripMenuItem();
             this.tsmiGruppi = new System.Windows.Forms.ToolStripMenuItem();
+            this.документыToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.ученикиToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.tsmiPrinyatUchenika = new System.Windows.Forms.ToolStripMenuItem();
+            this.tsmiSnyatUchenika = new System.Windows.Forms.ToolStripMenuItem();
+            this.учителяToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.группыToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.tsmiSmenaUchitelya = new System.Windows.Forms.ToolStripMenuItem();
+            this.tsmiUxodUchitelya = new System.Windows.Forms.ToolStripMenuItem();
             this.tsmiOperasii = new System.Windows.Forms.ToolStripMenuItem();
             this.tsmiPosesheniye = new System.Windows.Forms.ToolStripMenuItem();
             this.tsmiOplati = new System.Windows.Forms.ToolStripMenuItem();
@@ -45,10 +53,10 @@
             this.tsmiIstoriyaOplatPoUcheniku = new System.Windows.Forms.ToolStripMenuItem();
             this.tsmiIstoriyaViplatPoUchitelyu = new System.Windows.Forms.ToolStripMenuItem();
             this.tsmiIstoriyaPosesheniya = new System.Windows.Forms.ToolStripMenuItem();
-            this.statusStrip1 = new System.Windows.Forms.StatusStrip();
             this.tsmiGrafikUrokov = new System.Windows.Forms.ToolStripMenuItem();
             this.табельУчениковПоГруппамToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.табельУчителейToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.statusStrip1 = new System.Windows.Forms.StatusStrip();
             this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -57,6 +65,7 @@
             this.menuStrip1.ImageScalingSize = new System.Drawing.Size(20, 20);
             this.menuStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.tsmiSpravochniki,
+            this.документыToolStripMenuItem,
             this.tsmiOperasii,
             this.tsmiOplati,
             this.tsmiOtcheti});
@@ -95,6 +104,69 @@
             this.tsmiGruppi.Size = new System.Drawing.Size(224, 26);
             this.tsmiGruppi.Text = "Группы";
             this.tsmiGruppi.Click += new System.EventHandler(this.tsmiGruppi_Click);
+            // 
+            // документыToolStripMenuItem
+            // 
+            this.документыToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.ученикиToolStripMenuItem,
+            this.учителяToolStripMenuItem,
+            this.группыToolStripMenuItem});
+            this.документыToolStripMenuItem.Name = "документыToolStripMenuItem";
+            this.документыToolStripMenuItem.Size = new System.Drawing.Size(101, 24);
+            this.документыToolStripMenuItem.Text = "Документы";
+            // 
+            // ученикиToolStripMenuItem
+            // 
+            this.ученикиToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.tsmiPrinyatUchenika,
+            this.tsmiSnyatUchenika});
+            this.ученикиToolStripMenuItem.Name = "ученикиToolStripMenuItem";
+            this.ученикиToolStripMenuItem.Size = new System.Drawing.Size(224, 26);
+            this.ученикиToolStripMenuItem.Text = "Ученики";
+            // 
+            // tsmiPrinyatUchenika
+            // 
+            this.tsmiPrinyatUchenika.Name = "tsmiPrinyatUchenika";
+            this.tsmiPrinyatUchenika.Size = new System.Drawing.Size(276, 26);
+            this.tsmiPrinyatUchenika.Text = "Принять ученика в Группу";
+            this.tsmiPrinyatUchenika.Click += new System.EventHandler(this.tsmiPrinyatUchenika_Click);
+            // 
+            // tsmiSnyatUchenika
+            // 
+            this.tsmiSnyatUchenika.Name = "tsmiSnyatUchenika";
+            this.tsmiSnyatUchenika.Size = new System.Drawing.Size(276, 26);
+            this.tsmiSnyatUchenika.Text = "Снять Ученика с Группы";
+            this.tsmiSnyatUchenika.Click += new System.EventHandler(this.tsmiSnyatUchenika_Click);
+            // 
+            // учителяToolStripMenuItem
+            // 
+            this.учителяToolStripMenuItem.Enabled = false;
+            this.учителяToolStripMenuItem.Name = "учителяToolStripMenuItem";
+            this.учителяToolStripMenuItem.Size = new System.Drawing.Size(224, 26);
+            this.учителяToolStripMenuItem.Text = "Учителя";
+            // 
+            // группыToolStripMenuItem
+            // 
+            this.группыToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.tsmiSmenaUchitelya,
+            this.tsmiUxodUchitelya});
+            this.группыToolStripMenuItem.Name = "группыToolStripMenuItem";
+            this.группыToolStripMenuItem.Size = new System.Drawing.Size(224, 26);
+            this.группыToolStripMenuItem.Text = "Группы";
+            // 
+            // tsmiSmenaUchitelya
+            // 
+            this.tsmiSmenaUchitelya.Name = "tsmiSmenaUchitelya";
+            this.tsmiSmenaUchitelya.Size = new System.Drawing.Size(259, 26);
+            this.tsmiSmenaUchitelya.Text = "Смена Учителя Группы";
+            this.tsmiSmenaUchitelya.Click += new System.EventHandler(this.tsmiSmenaUchitelya_Click);
+            // 
+            // tsmiUxodUchitelya
+            // 
+            this.tsmiUxodUchitelya.Name = "tsmiUxodUchitelya";
+            this.tsmiUxodUchitelya.Size = new System.Drawing.Size(259, 26);
+            this.tsmiUxodUchitelya.Text = "Уход учителя из Группы";
+            this.tsmiUxodUchitelya.Click += new System.EventHandler(this.tsmiUxodUchitelya_Click);
             // 
             // tsmiOperasii
             // 
@@ -151,52 +223,43 @@
             // tsmiSpisokDoljnikov
             // 
             this.tsmiSpisokDoljnikov.Name = "tsmiSpisokDoljnikov";
-            this.tsmiSpisokDoljnikov.Size = new System.Drawing.Size(289, 26);
+            this.tsmiSpisokDoljnikov.Size = new System.Drawing.Size(298, 26);
             this.tsmiSpisokDoljnikov.Text = "Список должников";
             // 
             // tsmiSpisokKOplate
             // 
             this.tsmiSpisokKOplate.Name = "tsmiSpisokKOplate";
-            this.tsmiSpisokKOplate.Size = new System.Drawing.Size(289, 26);
+            this.tsmiSpisokKOplate.Size = new System.Drawing.Size(298, 26);
             this.tsmiSpisokKOplate.Text = "Список к оплате";
             // 
             // tsmiSpisokUchiteleyKViplate
             // 
             this.tsmiSpisokUchiteleyKViplate.Name = "tsmiSpisokUchiteleyKViplate";
-            this.tsmiSpisokUchiteleyKViplate.Size = new System.Drawing.Size(289, 26);
+            this.tsmiSpisokUchiteleyKViplate.Size = new System.Drawing.Size(298, 26);
             this.tsmiSpisokUchiteleyKViplate.Text = "Список учетелей к выплате";
             // 
             // tsmiIstoriyaOplatPoUcheniku
             // 
             this.tsmiIstoriyaOplatPoUcheniku.Name = "tsmiIstoriyaOplatPoUcheniku";
-            this.tsmiIstoriyaOplatPoUcheniku.Size = new System.Drawing.Size(289, 26);
+            this.tsmiIstoriyaOplatPoUcheniku.Size = new System.Drawing.Size(298, 26);
             this.tsmiIstoriyaOplatPoUcheniku.Text = "История оплат по ученику";
             // 
             // tsmiIstoriyaViplatPoUchitelyu
             // 
             this.tsmiIstoriyaViplatPoUchitelyu.Name = "tsmiIstoriyaViplatPoUchitelyu";
-            this.tsmiIstoriyaViplatPoUchitelyu.Size = new System.Drawing.Size(289, 26);
+            this.tsmiIstoriyaViplatPoUchitelyu.Size = new System.Drawing.Size(298, 26);
             this.tsmiIstoriyaViplatPoUchitelyu.Text = "История выплат по учителю";
             // 
             // tsmiIstoriyaPosesheniya
             // 
             this.tsmiIstoriyaPosesheniya.Name = "tsmiIstoriyaPosesheniya";
-            this.tsmiIstoriyaPosesheniya.Size = new System.Drawing.Size(289, 26);
+            this.tsmiIstoriyaPosesheniya.Size = new System.Drawing.Size(298, 26);
             this.tsmiIstoriyaPosesheniya.Text = "История посещения";
-            // 
-            // statusStrip1
-            // 
-            this.statusStrip1.ImageScalingSize = new System.Drawing.Size(20, 20);
-            this.statusStrip1.Location = new System.Drawing.Point(0, 546);
-            this.statusStrip1.Name = "statusStrip1";
-            this.statusStrip1.Size = new System.Drawing.Size(865, 22);
-            this.statusStrip1.TabIndex = 2;
-            this.statusStrip1.Text = "statusStrip1";
             // 
             // tsmiGrafikUrokov
             // 
             this.tsmiGrafikUrokov.Name = "tsmiGrafikUrokov";
-            this.tsmiGrafikUrokov.Size = new System.Drawing.Size(289, 26);
+            this.tsmiGrafikUrokov.Size = new System.Drawing.Size(298, 26);
             this.tsmiGrafikUrokov.Text = "График уроков";
             this.tsmiGrafikUrokov.Click += new System.EventHandler(this.tsmiGrafikUrokov_Click);
             // 
@@ -211,6 +274,15 @@
             this.табельУчителейToolStripMenuItem.Name = "табельУчителейToolStripMenuItem";
             this.табельУчителейToolStripMenuItem.Size = new System.Drawing.Size(298, 26);
             this.табельУчителейToolStripMenuItem.Text = "Табель Учителей";
+            // 
+            // statusStrip1
+            // 
+            this.statusStrip1.ImageScalingSize = new System.Drawing.Size(20, 20);
+            this.statusStrip1.Location = new System.Drawing.Point(0, 546);
+            this.statusStrip1.Name = "statusStrip1";
+            this.statusStrip1.Size = new System.Drawing.Size(865, 22);
+            this.statusStrip1.TabIndex = 2;
+            this.statusStrip1.Text = "statusStrip1";
             // 
             // MainForm
             // 
@@ -253,6 +325,14 @@
         private System.Windows.Forms.ToolStripMenuItem tsmiGrafikUrokov;
         private System.Windows.Forms.ToolStripMenuItem табельУчениковПоГруппамToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem табельУчителейToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem документыToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem ученикиToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem tsmiPrinyatUchenika;
+        private System.Windows.Forms.ToolStripMenuItem tsmiSnyatUchenika;
+        private System.Windows.Forms.ToolStripMenuItem учителяToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem группыToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem tsmiSmenaUchitelya;
+        private System.Windows.Forms.ToolStripMenuItem tsmiUxodUchitelya;
     }
 }
 

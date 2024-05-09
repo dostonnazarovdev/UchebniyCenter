@@ -42,5 +42,33 @@ namespace UchebniyCenter
             wnd.MdiParent = this;
             wnd.Show();
         }
+
+        private void tsmiPrinyatUchenika_Click(object sender, EventArgs e)
+        {
+            var wnd = new DocPrinyatUchenika();
+            wnd.MdiParent = this;
+            wnd.Show();
+        }
+
+        private void tsmiSnyatUchenika_Click(object sender, EventArgs e)
+        {
+            var wnd = new DocUxodUchenika();
+            wnd.MdiParent = this;
+            wnd.Show();
+        }
+
+        private void tsmiSmenaUchitelya_Click(object sender, EventArgs e)
+        {
+            var wnd = new DocSmenaUchitelyaForm();
+            wnd.MdiParent = this;
+            wnd.Show();
+        }
+
+        private void tsmiUxodUchitelya_Click(object sender, EventArgs e)
+        {
+            var wnd = new DocUxodUchitelya();
+            wnd.MdiParent = this;
+            wnd.Show();
+        }
     }
 }

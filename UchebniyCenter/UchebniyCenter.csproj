@@ -70,17 +70,29 @@
     <Compile Include="AddGruppaForm.Designer.cs">
       <DependentUpon>AddGruppaForm.cs</DependentUpon>
     </Compile>
+    <Compile Include="DocUxodUchenika.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DocUxodUchenika.Designer.cs">
+      <DependentUpon>DocUxodUchenika.cs</DependentUpon>
+    </Compile>
     <Compile Include="DocSmenaUchitelyaForm.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="DocSmenaUchitelyaForm.Designer.cs">
       <DependentUpon>DocSmenaUchitelyaForm.cs</DependentUpon>
     </Compile>
-    <Compile Include="DocUxodUchenika.cs">
+    <Compile Include="DocPrinyatUchenika.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="DocUxodUchenika.Designer.cs">
-      <DependentUpon>DocUxodUchenika.cs</DependentUpon>
+    <Compile Include="DocPrinyatUchenika.Designer.cs">
+      <DependentUpon>DocPrinyatUchenika.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DocUxodUchitelya.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DocUxodUchitelya.Designer.cs">
+      <DependentUpon>DocUxodUchitelya.cs</DependentUpon>
     </Compile>
     <Compile Include="GruppiForm.cs">
       <SubType>Form</SubType>
@@ -126,11 +138,17 @@
     <EmbeddedResource Include="AddGruppaForm.resx">
       <DependentUpon>AddGruppaForm.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="DocUxodUchenika.resx">
+      <DependentUpon>DocUxodUchenika.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="DocSmenaUchitelyaForm.resx">
       <DependentUpon>DocSmenaUchitelyaForm.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="DocUxodUchenika.resx">
-      <DependentUpon>DocUxodUchenika.cs</DependentUpon>
+    <EmbeddedResource Include="DocPrinyatUchenika.resx">
+      <DependentUpon>DocPrinyatUchenika.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DocUxodUchitelya.resx">
+      <DependentUpon>DocUxodUchitelya.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="GruppiForm.resx">
       <DependentUpon>GruppiForm.cs</DependentUpon>

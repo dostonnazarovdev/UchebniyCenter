@@ -1,6 +1,6 @@
 ﻿namespace UchebniyCenter
 {
-    partial class DocUxodUchenika
+    partial class DocUxodUchitelya
     {
         /// <summary>
         /// Required designer variable.
@@ -123,9 +123,9 @@
             this.label7.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label7.Location = new System.Drawing.Point(19, 123);
             this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(75, 20);
+            this.label7.Size = new System.Drawing.Size(87, 20);
             this.label7.TabIndex = 22;
-            this.label7.Text = "Ученик";
+            this.label7.Text = "Учитель";
             // 
             // comboBox1
             // 
@@ -148,15 +148,15 @@
             this.label2.TabIndex = 20;
             this.label2.Text = "Группа";
             // 
-            // DocUxodUchenika
+            // DocUxodUchitelya
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(542, 262);
             this.Controls.Add(this.panel2);
             this.Controls.Add(this.panel1);
-            this.Name = "DocUxodUchenika";
-            this.Text = "Документ Уход Ученика";
+            this.Name = "DocUxodUchitelya";
+            this.Text = "DocUxodUchenika";
             this.panel1.ResumeLayout(false);
             this.panel2.ResumeLayout(false);
             this.panel2.PerformLayout();

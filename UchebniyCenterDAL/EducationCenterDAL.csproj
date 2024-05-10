@@ -60,6 +60,9 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Exceptions\GroupException.cs" />
+    <Compile Include="Exceptions\StudentException.cs" />
+    <Compile Include="Exceptions\TeacherException.cs" />
     <Compile Include="Models\BaseModel.cs" />
     <Compile Include="DbContext\DatabaseContext.cs" />
     <Compile Include="Models\GroupModel.cs" />

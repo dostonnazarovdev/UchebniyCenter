@@ -11,7 +11,7 @@ namespace EducationCenterDAL
         public DatabaseContext() :
             base(new SQLiteConnection()
             {
-                ConnectionString = new SQLiteConnectionStringBuilder() { DataSource = Path.GetDirectoryName(Assembly.GetExecutingAssembly().Location) + @"E:\.NET\MyOwnProjects\EduCenterApp\db\eduCenter.db" }.ConnectionString
+                ConnectionString = new SQLiteConnectionStringBuilder() { DataSource = Path.GetDirectoryName(Assembly.GetExecutingAssembly().Location) + "/EduCenter.db" }.ConnectionString
             }, true)
         {
         }
@@ -21,7 +21,8 @@ namespace EducationCenterDAL
             base.OnModelCreating(modelBuilder);
         }
 
-        //public DbSet<MigrantImportModel> MigrantImportModels { get; set; }
-        //public DbSet<IchkiIshlarBazaDannix> IchkiIshlarBazaDannixes { get; set; }
+        public DbSet<StudentModel> StudentModels { get; set; }
+        public DbSet<TeacherModel> TeacherModels { get; set; }
+        public DbSet<GroupModel> GroupModels { get; set; }
     }
 }

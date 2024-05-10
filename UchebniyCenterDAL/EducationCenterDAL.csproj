@@ -60,9 +60,13 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Controllers\GroupController.cs" />
+    <Compile Include="Controllers\StudentController.cs" />
+    <Compile Include="Controllers\TeacherController.cs" />
     <Compile Include="Exceptions\GroupException.cs" />
     <Compile Include="Exceptions\StudentException.cs" />
     <Compile Include="Exceptions\TeacherException.cs" />
+    <Compile Include="IRepositories\IStudentRepository.cs" />
     <Compile Include="Models\BaseModel.cs" />
     <Compile Include="DbContext\DatabaseContext.cs" />
     <Compile Include="Models\GroupModel.cs" />
@@ -70,11 +74,14 @@
     <Compile Include="DbContext\SQLiteConfiguration.cs" />
     <Compile Include="Models\StudentModel.cs" />
     <Compile Include="Models\TeacherModel.cs" />
+    <Compile Include="Repositories\StudentRepository.cs" />
+    <Compile Include="Services\StudentService.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
     <None Include="packages.config" />
   </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">
     <PropertyGroup>

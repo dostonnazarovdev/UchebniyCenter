@@ -1,8 +1,8 @@
 ﻿using System;
 
-namespace UchebniyCenterDAL
+namespace EducationCenterDAL
 {
-    public class UchenikModel : BaseModel
+    public class StudentModel : BaseModel
     {
         public string FIO { get; set; }
 
@@ -14,14 +14,14 @@ namespace UchebniyCenterDAL
 
         public string Remark { get; set; }
 
-        public UchenikStatus? Status { get; set; }
+        public StudentStatus? Status { get; set; }
 
         public bool? IsFirstLessonFree { get; set; }
 
         public bool? IsFirstLessonFreeUsed { get; set; }
     }
 
-    public enum UchenikStatus
+    public enum StudentStatus
     {
         Active = 1,
         Inactive = 0

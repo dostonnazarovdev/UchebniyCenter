@@ -8,7 +8,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Data.SQLite.EF6;
 
-namespace DesktopApplication
+namespace EducationCenterDAL
 {
     public class SQLiteConfiguration : DbConfiguration
     {

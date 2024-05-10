@@ -37,5 +37,15 @@ namespace UchebniyCenter
                 btnSave.Text = "Добавить";
             }
         }
+
+        private void label3_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void btnClose_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

@@ -37,5 +37,10 @@ namespace UchebniyCenter
                 btnSave.Text = "Добавить";
             }
         }
+
+        private void btnClose_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

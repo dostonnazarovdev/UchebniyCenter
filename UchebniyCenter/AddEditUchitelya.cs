@@ -30,5 +30,10 @@ namespace UchebniyCenter
         }
 
         public bool IsEditMode { get; set; }
+
+        private void btnClose_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

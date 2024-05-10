@@ -5,7 +5,7 @@ VisualStudioVersion = 17.8.34525.116
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UchebniyCenter", "UchebniyCenter\UchebniyCenter.csproj", "{03B86C67-044F-483E-9F4B-CB84CF6DDA52}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UchebniyCenterDAL", "UchebniyCenterDAL\UchebniyCenterDAL.csproj", "{9EDB8BD4-837B-4340-932D-2AA8FF1C61F0}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EducationCenterDAL", "UchebniyCenterDAL\EducationCenterDAL.csproj", "{9EDB8BD4-837B-4340-932D-2AA8FF1C61F0}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

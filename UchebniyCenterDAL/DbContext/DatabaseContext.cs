@@ -4,14 +4,14 @@ using System.Data.SQLite;
 using System.IO;
 using System.Reflection;
 
-namespace UchebniyCenterDAL
+namespace EducationCenterDAL
 {
     public class DatabaseContext : DbContext
     {
         public DatabaseContext() :
             base(new SQLiteConnection()
             {
-                ConnectionString = new SQLiteConnectionStringBuilder() { DataSource = Path.GetDirectoryName(Assembly.GetExecutingAssembly().Location) + "/Migrant.db" }.ConnectionString
+                ConnectionString = new SQLiteConnectionStringBuilder() { DataSource = Path.GetDirectoryName(Assembly.GetExecutingAssembly().Location) + @"E:\.NET\MyOwnProjects\EduCenterApp\db\eduCenter.db" }.ConnectionString
             }, true)
         {
         }

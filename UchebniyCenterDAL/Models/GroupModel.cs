@@ -1,14 +1,14 @@
 ﻿using System;
 
-namespace UchebniyCenterDAL
+namespace EducationCenterDAL
 {
-    public class GruppaModel : BaseModel
+    public class GroupModel : BaseModel
     {
         public string Name { get; set; }
-        public string KursName { get; set; }
+        public string CourseName { get; set; }
         public long? TeacherId { get; set; }
     
-        public decimal? KursPrice { get; set; }
+        public decimal? CoursePrice { get; set; }
 
         public decimal? OneLessonsPrice { get; set; }
 
@@ -26,10 +26,10 @@ namespace UchebniyCenterDAL
 
         public string Cabinet { get; set; }
 
-        public GruppaState? gruppaState { get; set; } = GruppaState.NotActive;
+        public GroupState? groupState { get; set; } = GroupState.NotActive;
     }
 
-    public enum GruppaState
+    public enum GroupState
     {
         Active = 1,
         NotActive = 2,

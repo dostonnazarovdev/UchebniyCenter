@@ -1,8 +1,8 @@
 ﻿using System;
 
-namespace UchebniyCenterDAL
+namespace EducationCenterDAL
 {
-    public class UchitelModel : BaseModel
+    public class TeacherModel : BaseModel
     {
         public string FIO { get; set; }
 
@@ -12,12 +12,12 @@ namespace UchebniyCenterDAL
 
         public string Remark { get; set; }
 
-        public UchitelStatus? Status { get; set; }
+        public TeacherStatus? Status { get; set; }
 
-        public decimal? ProcentFromUchenik { get; set; }
+        public decimal? ProcentFromTeacher { get; set; }
     }
 
-    public enum UchitelStatus
+    public enum TeacherStatus
     {
         Active = 1,
         Inactive = 0

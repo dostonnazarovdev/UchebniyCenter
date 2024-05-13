@@ -20,29 +20,7 @@ namespace UchebniyCenter
             Application.SetCompatibleTextRenderingDefault(false);
             Application.Run(new MainForm());
 
-            using (var db = new DatabaseContext())
-            {
-                db.StudentModels.Add(new StudentModel()
-                {
-                    FIO = "aaabbb",
-                    Adress = "jizzax",
-                    Phone = "12345",
-                    ParentFIO = "ddddd",
-                    Remark = "ttttttttt",
-                    Status = (StudentStatus)Enum.Parse(typeof(StudentStatus), "Active", true),
-                    IsFirstLessonFreeUsed = true
-            }) ;
-               
-                db.SaveChanges();
-
-                foreach (var student in db.StudentModels)
-                {
-                    Console.WriteLine(student.FIO);
-                }
-            }
-
-            Console.WriteLine("Press any key to exit...");
-            Console.ReadKey();
+           
         }
     }
 }
